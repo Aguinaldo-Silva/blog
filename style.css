@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --color-gray-100: #065E7C;
+}
+
+html, body, h1, #page{
+    font-family: 'Mulish', sans-serif;
+}
+
+
+.logo{
+background-color: white;
+border-radius: 10px;
+
+
+}
+header{
+    background: var(--color-gray-100);
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header input{
+    color: white;
+    border-radius: 4px;
+background: rgba(255, 255, 255, 0.20);
+border: 0;
+position: relative;
+padding: .6rem 1.6rem .6rem 1.6rem;
+
+}
+
+header input:focus + label {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+
+header label{
+    position: absolute;
+    color: #FFF;
+font-family: Mulish;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 600;
+
+padding: 1rem 1.2rem;
+text-align: start;
+
+}
+
+header label:focus{
+    opacity: 0;
+}
+
+
+
+#app{
+   display: flex;
+   flex-direction: column;
+   max-width: 38.2rem;
+   margin: 0 auto;
+   border: 2px solid #387E96;
+   
+   
+}
+body{
+    margin: 0 auto;
+}
+
+main h2{
+    text-transform: uppercase;
+    margin-top: 3.2rem;
+
+}
+
+
+main img{
+    width: 100%;
+}
+
+
+.gato-topo{
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    
+}
+
+
+main {
+    max-width: 38.2rem;
+    
+
+}
+
+main h1{
+
+    font-family: Mulish;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 160%; /* 38.4px */
+}
+
+main p{
+    color: var(--platform-aliases-background, #121214);
+font-family: Mulish;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%;
+margin-top: 6rem;
+}
+
+
+
+
+
+
+.container{
+    padding: 1.6rem 3.2rem;
+    width: min(112rem, 100%);
+    margin: 0 auto;
+  
+}
+
+
+   sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+   }
+
+
+sidebar nav{
+    display: flex;
+    color: var(--platform-aliases-background, #121214);
+
+font-family: Mulish;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%;
+   
+   
+}
+
+
+nav img{
+    width: 100%;
+}
+
+sidebar p{
+    color: var(--platform-aliases-background, #121214);
+
+font-family: Mulish;
+font-size: 1.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; 
+    
+    
+}
+.gatos{
+    margin-left: 1.6rem;
+
+}
+
+
+footer{
+    background: #387E96;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+@media ( min-width:1240px){
+
+   
+    #app{
+        min-width: 100%;
+      
+        display: grid;
+        grid-template-areas:
+          "header header"
+         "main  sidebar"
+         "footer footer";
+        margin: 0 auto;
+       
+       }
+
+
+       header{
+        grid-area: header;
+        justify-content:space-around;
+        align-items: center;
+       }
+sidebar{
+    margin-left: 5rem;
+    
+}
+       
+
+
+       main{
+        grid-area: main;
+        
+        
+        
+       }
+
+       sidebar{
+        grid-area: sidebar;
+        
+        width: 100%;
+
+       }
+
+footer{
+ 
+    grid-area: footer;
+    padding: 1.6rem;
+
+}
+
+
+main p{
+    width: 80rem;
+    color: var(--platform-aliases-background, #121214);
+font-family: Mulish;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%;
+margin-bottom: 3.6rem;
+}
+.container{
+    max-width: 88rem;
+}
+
+
+nav img{
+    max-width: 15rem;
+}
+
+}
+
+
+
+
+
+
